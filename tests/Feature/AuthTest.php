@@ -54,6 +54,7 @@ class AuthTest extends TestCase
 
         //Act
         $user_id = AuthTrait::checkToken('fakeToken');
+
         //Assert
         assertEquals(false, $user_id);
 
