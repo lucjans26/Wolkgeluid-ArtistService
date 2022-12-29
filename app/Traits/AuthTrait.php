@@ -65,7 +65,7 @@ trait AuthTrait
     {
         AuthTrait::deleteTokens($user_id);
         $artists = Artist::where('user_id', $user_id)->get();
-        MessageTrait::publish('artist', json_encode(['action'=>'deleteSongs', 'artists' => $artists]));
+        MessageTrait::publish('user', json_encode(['action'=>'deleteSongs', 'artists' => $artists]));
         $albums = Album::where('user_id', $user_id)->get();
         foreach ($albums as $album)
         {
