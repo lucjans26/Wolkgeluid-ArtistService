@@ -53,6 +53,9 @@ class RabbitUserConsumer extends Command
                     case 'logout':
                         AuthTrait::deleteTokens($pload['user_id']);
                         break;
+                    case 'delete':
+                        AuthTrait::deleteUser($pload['user_id']);
+                        break;
                     default:
                         break;
                 }

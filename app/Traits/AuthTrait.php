@@ -60,4 +60,21 @@ trait AuthTrait
         }
         return false;
     }
+
+    public static function deleteUser($user_id)
+    {
+        AuthTrait::deleteTokens($user_id);
+        $artists = Artist::where('user_id', $user_id)->get();
+        MessageTrait::publish('artist', json_encode(['action'=>'deleteSongs', 'artists' => $artists]));
+        $albums = Album::where('user_id', $user_id)->get();
+        foreach ($albums as $album)
+        {
+            $album->delete();
+        }
+        foreach ($artists as $artist)
+        {
+            $artist->delete();
+        }
+
+    }
 }
