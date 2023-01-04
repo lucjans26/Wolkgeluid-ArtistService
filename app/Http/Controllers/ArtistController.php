@@ -58,7 +58,7 @@ class ArtistController extends Controller
             $artist = Artist::where('id', '=', $validateData['artistId'])->where('user_id', '=', $user_id)->first();
             if ($artist)
             {
-                if ($validateData['userId'] == $artist->user_id)
+                if ($user_id == $artist->user_id)
                 {
                     $artist->delete();
                     //Make sure to delete all the albums and songs associated with the artist through artist topic RabbitMQ
@@ -83,7 +83,7 @@ class ArtistController extends Controller
             'artistName' => 'required|string|max:100',
             'artistId' => 'required',
             'pat' => 'required|string',
-            'bio' => 'required|string|max:1500',
+            'bio' => '|string|max:1500',
         ]);
 
         if(AuthTrait::checkAbility(self::ABILITY, $validateData['pat']))
@@ -92,7 +92,7 @@ class ArtistController extends Controller
             $artist = Artist::where('id', $validateData['artistId'])->where('user_id', '=', $user_id)->first();
             if ($artist)
             {
-                $artist->update(['name' => $validateData['artistName'], 'bio' => $validateData['bio']]);
+                $artist->update(['name' => $validateData['artistName'], 'bio' => $validateData['bio']??$artist->bio]);
                 return response()->json($artist, 200);
             }
             $response = new InvalidResponse(ResponseStrings::NOT_FOUND);
@@ -114,14 +114,15 @@ class ArtistController extends Controller
         {
             if (key_exists('artistId', $validateData))
             {
-                $artist = Artist::where('id', $validateData['artistId'])->get();
+                $artist = Artist::where('id', $validateData['artistId'])->first();
                 if ($artist)
                 {
                     return response()->json($artist, 200);
                 }
                 $response = new InvalidResponse(ResponseStrings::NOT_FOUND);
                 return response()->json($response, 404);
-            } else
+            }
+            else
             {
                 $artists = Artist::all();
                 return response()->json($artists, 200);

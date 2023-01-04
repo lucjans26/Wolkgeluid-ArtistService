@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="20" assertions="20" errors="0" warnings="0" failures="0" skipped="0" time="2.781117">
+    <testsuite name="Unit" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.006552">
+      <testsuite name="Tests\Unit\ExampleTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Unit\ExampleTest.php" tests="1" assertions="1" errors="0" warnings="0" failures="0" skipped="0" time="0.006552">
+        <testcase name="test_that_true_is_true" class="Tests\Unit\ExampleTest" classname="Tests.Unit.ExampleTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Unit\ExampleTest.php" line="14" assertions="1" time="0.006552"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="Feature" tests="19" assertions="19" errors="0" warnings="0" failures="0" skipped="0" time="2.774565">
+      <testsuite name="Tests\Feature\AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" tests="15" assertions="15" errors="0" warnings="0" failures="0" skipped="0" time="2.289430">
+        <testcase name="test_get__all_artists_valid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="23" assertions="1" time="0.481582"/>
+        <testcase name="test_get_all_artist_invalid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="32" assertions="1" time="0.133613"/>
+        <testcase name="test_get_fake_artist_invalid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="41" assertions="1" time="0.120853"/>
+        <testcase name="test_get_fake_artist_valid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="50" assertions="1" time="0.121742"/>
+        <testcase name="test_get_artist_invalid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="59" assertions="1" time="0.126177"/>
+        <testcase name="test_get_artist_valid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="70" assertions="1" time="0.126037"/>
+        <testcase name="test_create_valid_artist_valid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="82" assertions="1" time="0.131903"/>
+        <testcase name="test_create_invalid_artist_valid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="91" assertions="1" time="0.137925"/>
+        <testcase name="test_create_valid_artist_invalid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="100" assertions="1" time="0.140619"/>
+        <testcase name="test_create_invalid_artist_invalid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="107" assertions="1" time="0.131749"/>
+        <testcase name="test_update_valid_artist_valid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="114" assertions="1" time="0.131489"/>
+        <testcase name="test_update_valid_artist_invalid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="125" assertions="1" time="0.124294"/>
+        <testcase name="test_update_invalid_artist_valid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="134" assertions="1" time="0.127815"/>
+        <testcase name="test_delete_invalid_artist_valid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="143" assertions="1" time="0.127437"/>
+        <testcase name="test_delete_valid_artist_invalid_token" class="Tests\Feature\AlbumTest" classname="Tests.Feature.AlbumTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AlbumTest.php" line="155" assertions="1" time="0.126195"/>
+      </testsuite>
+      <testsuite name="Tests\Feature\AuthTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AuthTest.php" tests="4" assertions="4" errors="0" warnings="0" failures="0" skipped="0" time="0.485135">
+        <testcase name="test_auth_token_registration" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AuthTest.php" line="22" assertions="1" time="0.130475"/>
+        <testcase name="test_auth_exising_token_check" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AuthTest.php" line="36" assertions="1" time="0.114675"/>
+        <testcase name="test_auth_non_exising_token_check" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AuthTest.php" line="49" assertions="1" time="0.121486"/>
+        <testcase name="test_auth_token_deletion" class="Tests\Feature\AuthTest" classname="Tests.Feature.AuthTest" file="C:\Users\Luc Janssen\Documents\FHICT\Semester 7\2nd try\Wolkgeluid\artistService\tests\Feature\AuthTest.php" line="64" assertions="1" time="0.118500"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
